@@ -1,0 +1,132 @@
+/*
+ * Practice : Float Property
+ * Version: 1
+ * By: xxx
+ */
+
+#main {
+  margin: 0 auto;
+  background-color: #E0E0E0;
+  width: 950px;
+  overflow: hidden;
+}
+
+/* Header & Nav */
+
+header {
+  padding: 10px;
+  background-color: #E0E0E0;
+}
+
+header h1 {
+  font-size: 1.1em;
+}
+
+nav {
+  background-color: #D0D0D0;
+  padding: 10px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  margin: 0 10px 0 0 ;
+}
+
+/* Article */
+
+article {
+  float: right;
+  width: 68.81%;
+  background-color: #C0C0C0;
+}
+
+article img {
+  float: right;
+  margin: 0 20px 0 10px;
+}
+
+article h2, article p {
+  margin: 10px;
+}
+
+article p span {
+  float: left;
+  font-size: 3rem;
+  margin: 0 10px 10px 0;
+}
+
+/* Side */
+
+aside {
+  float: left;
+  width: 31.18%;
+}
+
+aside label, aside p, aside ul{
+  display: block;
+  margin: 10px;
+}
+
+aside label input {
+  display: block;
+  width: 100%;
+}
+
+/* Gallery */
+
+section {
+  clear: both;
+  background-color: #eeeeee;
+  padding: 10px;
+  overflow: hidden;
+}
+
+section h2 {
+  font-size: 1.1rem;
+  margin: 5px;
+}
+
+section ul li {
+  float: left;
+}
+
+section ul li img {
+  margin: 5px;
+}
+
+/* Footer */
+section img {
+  float: left;
+  margin: 5px;
+}
+
+section p span {
+  float: left;
+  font-size: 3rem;
+  margin: 0 10px 0 10px;
+  display: block;
+}
+
+.clear {
+  clear: both;
+}
+
+#footer {
+  border: 2px solid limegreen;
+  box-sizing: border-box;
+  padding: 20px;
+  overflow: hidden;
+}
+
+#footer img {
+  float: right;
+}
