@@ -3,3 +3,122 @@
  * Version: 1
  * By: xxx
  */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.main {
+  margin: 0 auto;
+  background-color: #EEEEEE;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 15px;
+}
+
+header h1 {
+  font-size: 1.3rem;
+}
+
+.nav ul {
+  padding: 15px;
+  background-color: #DDDDDD;
+}
+
+.nav ul li {
+  display: inline-block;
+}
+
+.content {
+  padding: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content .column {
+  flex: 1;
+}
+
+.table {
+  border: 1px solid #EEEEEE;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  display: table;
+  width: 100%;
+}
+
+.table-header {
+  display: table-header-group;
+}
+
+.table-row {
+  display: table-row;
+}
+
+.table-cell {
+  background-color: #CCCCCC;
+  border: 1px solid #EEEEEE;
+  display: table-cell;
+  padding: 15px;
+  text-align: center;
+}
+
+.posts {
+  padding: 15px;
+  overflow: hidden;
+}
+
+.posts div {
+  border: 1px solid rgb(250, 19, 26);
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  margin: 5px;
+  width: 30%;
+}
