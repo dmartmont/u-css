@@ -3,3 +3,98 @@
  * Version: 1
  * By: xxx
  */
+
+ .nm-container {
+   margin: 0 auto;
+   width: 70%;
+ }
+
+/* General styling */
+
+ .nm-example {
+   background-color: #EEEEEE;
+   overflow: hidden;
+   padding: 15px;
+   margin: 20px 0 20px 0;
+ }
+
+ .nm-example h3 {
+   padding: 10px 0 10px 0;
+   border-bottom: 1px solid rgb(208, 79, 53);
+ }
+
+/* First container */
+
+ .nm-content {
+   float: left;
+   width: 100%;
+   margin-right: -200px;
+ }
+
+ .nm-content h5 {
+   font-weight: bold;
+ }
+
+ .nm-sidebar-example .nm-content p {
+   margin-right: 210px;
+ }
+
+ .nm-sidebar {
+   float: left;
+   width: 200px;
+   border-left: 1px solid #D0D0D0;
+   box-sizing: border-box;
+ }
+
+ .nm-example-li {
+   clear:both;
+ }
+
+ /* Second container */
+
+.nm-li-example ul {
+  list-style: none;
+}
+
+.nm-li-example ul li {
+  width: 100px;
+  line-height: 25px;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.top {
+  margin-top: -78px;
+}
+
+.col-2 {
+  margin-left: 100px;
+}
+
+.col-3 {
+  margin-left: 200px;
+}
+
+.nm-sticky-example {
+  display: flex;
+  flex-direction: column;
+}
+
+.nm-sticky-example .nm-content {
+  flex: 1 0 auto;
+  justify-content: start;
+}
+
+.nm-site-footer {
+  flex-shrink: 0;
+}
+
+.nm-site-footer ul {
+  list-style: none;
+  background-color: rgb(208, 79, 53);
+}
+
+.nm-site-footer li {
+  display: inline-block;
+  margin: 10px;
+  color: white;
+}
