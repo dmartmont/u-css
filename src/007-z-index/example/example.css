@@ -149,5 +149,68 @@ table {
 }
 
 .sidebar ul li {
+  position: relative;
   line-height: 1.7rem;
 }
+
+.sidebar li::before{
+  position: absolute;
+  z-index: 4;
+  background: green;
+  content: "";
+  width: 150px;
+  height: 150px;
+  transform: rotate(35deg);
+}
+
+.sidebar li:nth-child(1)::before {
+  top: 200px;
+  background: rgb(226, 46, 72);
+}
+
+.sidebar li:nth-child(2)::before {
+  top: 210px;
+  left: 25px;
+  background: rgb(228, 119, 54);
+}
+
+
+.sidebar li:nth-child(3)::before {
+  top: 220px;
+  left: 50px;
+  background: rgb(191, 229, 121);
+}
+
+
+.sidebar li:nth-child(4)::before {
+  top: 230px;
+  left: 75px;
+  background: rgb(105, 230, 197);
+}
+
+
+.sidebar li:nth-child(5)::before {
+  top: 240px;
+  left: 75px;
+  background: rgb(65, 124, 223);
+}
+
+
+.sidebar li:nth-child(6)::before {
+  top: 230px;
+  left: 50px;
+  background: rgb(226, 55, 203);
+}
+
+
+.sidebar li:nth-child(7)::before {
+  top: 220px;
+  left: 25px;
+  background: rgb(216, 226, 231);
+}
+
+.sidebar li:nth-child(8)::before {
+  top: 210px;
+  background: rgb(255, 46, 72);
+}
+
