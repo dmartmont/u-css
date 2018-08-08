@@ -3,3 +3,151 @@
  * Version: 1
  * By: xxx
  */
+
+/* CSS Reset Start */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS Reset End */
+
+/* Main content */
+.page-content {
+  background-color: rgb(213, 234, 223);
+  overflow: hidden;
+  padding: 0px;
+}
+
+.main-container {
+  padding: 80px;
+  position: relative;
+}
+
+.main {
+  box-sizing: border-box;
+  color: white;
+  background-color: rgb(123, 196, 206);
+  text-transform: uppercase;
+  font-weight: 100;
+  padding: 50px;
+  padding-right: 40%;
+}
+
+.main .header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: none;
+}
+
+.main .content {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.main hr {
+  background-color: rgb(180, 151, 162);
+  height: 2px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.main p {
+  line-height: 1.5rem;
+  font-weight: 100;
+}
+
+.main .note {
+  background-color: rgb(228, 243, 245);
+  color: black;
+  text-transform: none;
+  margin-left: -50px;
+  padding: 30px;
+  padding-left: 50px;
+}
+
+.main .note .title {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Sidebar */
+
+.sidebar-background {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.sidebar {
+  background-color: rgb(223, 224, 142);
+  position: absolute;
+  margin-top: 80px;
+  padding: 50px;
+  width: 30%;
+  height: 80%;
+  top: 80px;
+  right: 80px;
+  z-index: 3;
+}
+
+.sidebar .title-list {
+  font-size: 1.7rem;
+  font-weight: 100;
+  line-height: 2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar ul li {
+  line-height: 1.7rem;
+}
