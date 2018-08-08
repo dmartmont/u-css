@@ -3,3 +3,118 @@
  * Version: 1
  * By: xxx
  */
+
+/* CSS Reset Start */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS Reset End */
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.layout-1, .layout-2{
+  background-color: rgb(254, 208, 198);
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.layout-1 .sidebar {
+  background-color: rgb(143, 208, 208);
+  float: left;
+  margin-right: -300px;
+  position: relative;
+  width: 300px;
+}
+
+.layout-1 .main {
+  border-left: 300px solid rgb(143, 208, 208);
+  float: left;
+  padding: 15px;
+}
+
+.layout-1 .nav, .layout-1 .footer {
+  background-color: rgb(206, 81, 60);
+  clear: left;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.layout-1 .nav ul li, .layout-1 .footer ul li {
+  color: white;
+  display: inline-block;
+  margin: 15px;
+}
+
+/* Layout 2 */
+
+.layout-2 .nav ul, .layout-2 .footer ul {
+  background-color: rgb(206, 81, 60);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.layout-2 .nav ul li, .layout-2 .footer ul li {
+  color: white;
+  padding: 15px;
+}
+
+.layout-2 .wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.layout-2 .wrapper .sidebar {
+  flex: 1;
+  background-color: rgb(143, 208, 208);
+}
+
+.layout-2 .wrapper .main {
+  flex: 2;
+  padding: 15px;
+}
