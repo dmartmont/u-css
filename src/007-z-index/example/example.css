@@ -6,6 +6,8 @@
 
 /* CSS Reset Start */
 
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,8 +58,14 @@ table {
 /* Main content */
 .page-content {
   background-color: rgb(213, 234, 223);
+  font-family: 'Raleway', Verdana, Arial, sans-serif;
+  font-weight: 100;
   overflow: hidden;
   padding: 0px;
+}
+
+.page-content p::first-letter {
+  font-weight: bold;
 }
 
 .main-container {
@@ -160,57 +168,121 @@ table {
   content: "";
   width: 150px;
   height: 150px;
+  top: 210px;
   transform: rotate(35deg);
 }
 
 .sidebar li:nth-child(1)::before {
-  top: 200px;
   background: rgb(226, 46, 72);
 }
 
 .sidebar li:nth-child(2)::before {
-  top: 210px;
-  left: 25px;
+  left: 30px;
   background: rgb(228, 119, 54);
 }
 
 
 .sidebar li:nth-child(3)::before {
-  top: 220px;
-  left: 50px;
+  left: 60px;
   background: rgb(191, 229, 121);
 }
 
 
 .sidebar li:nth-child(4)::before {
-  top: 230px;
-  left: 75px;
+  left: 90px;
   background: rgb(105, 230, 197);
 }
 
 
 .sidebar li:nth-child(5)::before {
-  top: 240px;
-  left: 75px;
+  left: 90px;
   background: rgb(65, 124, 223);
 }
 
 
 .sidebar li:nth-child(6)::before {
-  top: 230px;
-  left: 50px;
+  left: 60px;
   background: rgb(226, 55, 203);
 }
 
 
 .sidebar li:nth-child(7)::before {
-  top: 220px;
-  left: 25px;
+  left: 30px;
   background: rgb(216, 226, 231);
 }
 
 .sidebar li:nth-child(8)::before {
-  top: 210px;
   background: rgb(255, 46, 72);
 }
 
+.content .input-container {
+  border: none;
+  position: relative;
+}
+
+.content .input-container input{
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  height: 1.3rem;
+  padding-left: 30px;
+}
+
+.content .input-container::after {
+  color: black;
+  content: '\e880';
+  font-family:'Material Icons';
+  height: 1rem;
+  left: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+}
+
+.title::after {
+  color: black;
+  content: '\e236\e234\e237';
+  float: right;
+  font-family: 'Material Icons';
+  height: 1rem;
+}
+
+.note button {
+  align-items: center;
+  background-color: #f24684;
+  color: white;
+  display: flex;
+  font-size: 1rem;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.note button:focus {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.note button i {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.sidebar li:nth-child(even) {
+  font-size: 12pt;
+}
+
+.sidebar li:nth-child(even)::after {
+  content: ' - using pt';
+  font-weight: bold
+}
+
+.sidebar li:nth-child(2n) {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.sidebar li:nth-child(2n+3)::after {
+  content: ' - using em';
+  font-weight: bold;
+}
