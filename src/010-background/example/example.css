@@ -1,5 +1,119 @@
 /*
  * Practice : Background, Color and Shadows
- * Version: 1
- * By: xxx
- */
+* Version: 1
+* By: xxx
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.page-content {
+  background: radial-gradient(circle closest-side, #f5a275, #D24F2E);
+  padding: 50px;
+  height: 100%;
+}
+
+.header {
+  align-items: center;
+  border-width: 0 0 3px 0;
+  border-style: solid;
+  border-image: radial-gradient(circle,  #ef9f70, #D24F2E);
+  border-image-slice: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+
+.header h2, .header h3 {
+  color: white;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+}
+
+.header h3 {
+  font-size: 1.8rem;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card {
+  align-items: center;
+  background-color: #ef9f70;
+  border-top-left-radius: 75px;
+  border-bottom-left-radius: 75px;
+  border-top-right-radius: 75px;
+  border-bottom-right-radius: 75px;
+  box-shadow:
+    inset 2px 2px 5px rgba(255, 255, 255, 0.6),
+    2px 2px 5px #cb512c;
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  padding: 25px;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.card-content {
+  color: white;
+  margin: 15px;
+}
+
+.card-content h2, .card-content p {
+  font-size: 1rem;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
+}
