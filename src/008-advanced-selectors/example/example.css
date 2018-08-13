@@ -150,4 +150,54 @@ footer div {
   width: 90px;
 }
 
+/* Practice code */
 
+a {
+  color: #9b9b9b;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fbc2d4;
+}
+
+/* Sidebar */
+
+.as-container > aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+.as-container > aside ul li {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.as-button-list li:hover {
+  background-color: #fac2df;
+}
+
+.as-button-list li:nth-last-child(n+2) {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #fac2df;
+}
+
+.as-avatar a:hover {
+  color: #fbc2d4;
+}
+
+/* Main content */
+
+.as-top-list button:first-child {
+  background-color: #000;
+}
+
+.as-card:hover {
+  transition: all 0.5s;
+  opacity: 0.5;
+}
+
+.as-card-img img:hover {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
