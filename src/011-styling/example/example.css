@@ -3,3 +3,184 @@
  * Version: 1
  * By: xxx
  */
+
+/* Reset start */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+  border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset end */
+
+a {
+  text-decoration: none;
+}
+
+.page-content {
+  height: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+.page-wrap {
+  margin: 0 auto;
+}
+
+.header {
+  background: url(../resources/background.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+}
+
+.header h1 {
+  background-color: #000;
+  color: white;
+  font-size: 1.5rem;
+  height: 100%;;
+  line-height: 200px;
+  opacity: 0.4;
+  position: absolute;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;;
+}
+
+/* Contact form */
+
+input[type=text], input[type=email], textarea {
+  background: #eeeeee;
+  border:none;
+  box-sizing: border-box;
+  display: block;
+  font-size: 1rem;
+  margin: 10px 0px;
+  padding: 10px;
+  width: 100%;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  border: 1px solid grey;
+  outline: none;
+}
+
+.contact-form {
+  margin: 0 25%;
+  padding: 0;
+  width: 50%;
+}
+
+.contact-form form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.contact-form form button {
+  align-self: flex-start;
+  background-color: #fbc2d4;
+  border: 1px solid #fbc2d4;
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+  padding: 15px 60px;
+  text-transform: uppercase;
+}
+
+.contact-form form button:hover {
+  background-color: white;
+  color: #fbc2d4;
+}
+
+.contact-form form p {
+  align-self: flex-start;
+  color: grey;
+  margin: 20px 0px;
+}
+
+
+/* Footer  */
+
+footer {
+  background-color: #f3bccd;
+}
+
+.footer-content {
+  align-items: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-content > div {
+  margin: 30px;
+  width: 20%;
+}
+
+.footer-content p {
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 15px 0;
+  text-transform: uppercase;
+}
+
+.footer-content ul {
+  margin: 15px 0;
+}
+
+.footer-content ul li {
+  line-height: 2rem;
+}
+
+.footer-content ul li a {
+  color: white;
+}
+
+.footer-content ul li a:hover {
+  color: black;
+}
+
+
