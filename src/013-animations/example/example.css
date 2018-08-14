@@ -242,4 +242,76 @@ html {
   }
 }
 
+/* --- Practice --- */
 
+/* Animations */
+
+.flash {
+  animation: flash 1s linear alternate infinite;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animals */
+
+.animal-info h3, .animal-info p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.article ul li img, .article ul li div {
+  transform: rotateY(30deg);
+  transition: transform 1s;
+}
+
+.article ul li:hover > img, .article ul li:hover > div {
+  transform: rotateY(0deg);
+  transition: transform 1s;
+}
+
+/* Notes */
+
+.notes ul li:nth-child(even) {
+  transform: rotate(4deg);
+  transition: transform 0.5s;
+  z-index: 5;
+}
+
+.notes ul li:nth-child(odd) {
+  transform: rotate(-6deg);
+  transition: transform 0.5s;
+  z-index: 5;
+}
+
+.notes ul li:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+/* Sidebar */
+
+.sidebar ul li button:hover {
+  animation: bounce 2s ease-in-out infinite forwards;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
