@@ -3,3 +3,221 @@
  * Version: 1
  * By: xxx
  */
+
+/* CSS Reset start */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Practice content */
+
+main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+footer {
+  background-color: #9272d9;
+  color: white;
+  padding: 20px;
+}
+
+.page-content {
+  padding: 0px;
+}
+
+/* Main styling */
+
+.bg-effect {
+  background: url("../resources/images/image.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 300px;
+  width: 100%;
+  z-index: -1;
+}
+
+footer div {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.footer-text *:not(h1), .footer-schedule *:not(h1), .footer-mosaic *:not(h1) {
+  display: none;
+}
+
+.footer-text, .footer-schedule, .footer-mosaic {
+  margin: 20px;
+}
+
+
+/* Cards */
+
+.card {
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 20px 0px;
+  position: relative;
+  width: 300px;
+}
+
+.card-image {
+  box-sizing: border-box;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.card-image img {
+  border-radius: 5px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.card:hover .card-image img {
+  transform: scale(1.2);
+}
+
+.card-content-main {
+  padding: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.card-content-footer {
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.card-content-footer div:first-child a {
+  color: grey;
+  cursor: pointer;
+}
+
+.card-content-footer div:first-child a:hover {
+  color: darkgray;
+}
+
+.card-content-footer div:last-child a {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.card-content-footer div:last-child a:hover {
+  background-color: lightgray;
+}
+
+@media screen and (min-width: 375px) {
+  .content {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin: -100px auto 100px;
+    position: relative;
+    width: 80%;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  footer div {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-text, .footer-schedule, .footer-mosaic {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+  }
+
+  .footer-text *:not(h1), .footer-schedule *:not(h1), .footer-mosaic *:not(h1) {
+    display: block;
+  }
+
+  .footer-text h1, .footer-schedule h1, .footer-mosaic h1 {
+    margin-bottom: 20px;
+  }
+
+  .footer-text div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-schedule ul {
+    width: 100%;
+  }
+
+  .footer-schedule ul li {
+    line-height: 2rem;
+    position: relative;
+  }
+
+  .footer-schedule ul li span {
+    position: absolute;
+    right: 0;
+  }
+
+  .footer-mosaic .img-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+  .img-box img {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
